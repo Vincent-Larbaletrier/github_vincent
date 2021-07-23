@@ -1,0 +1,206 @@
+/* inscription.css */
+
+body{
+	padding: 30px 15% 30px 15%;
+	width: 70%;
+}
+
+#contenu {
+	background-color: #EDEDED;
+	border: 3px solid black;
+	padding: 30px;
+	width: 80%;
+}
+
+h1 {
+	display: inline-block;
+	width: 87%;
+}
+
+.logo_a {
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+}
+
+.logo_img {
+	width: 50px;
+	transition: transform .2s;
+}
+
+.logo_img:hover {
+    transform: scale(1.1);
+}
+
+.categorie {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#attention {
+	width: 400px;
+	font-size: 10px;
+	margin: 0px;
+	margin-left: 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+input[type="checkbox"]{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	display: inline-block;
+	cursor: pointer;
+	padding: 8px 8px;
+	border: 1px solid orange;
+	border-radius: 5px;
+	background-color: white;
+  	width: 13px;
+  	height: 13px;
+  	margin: 0;
+  	vertical-align: bottom;
+  	position: relative;
+  	top: -1px;
+  	*overflow: hidden;
+}
+
+input[type="checkbox"]:checked{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	background-repeat: no-repeat;
+	background-size: 23.5px;
+	background-position: center;
+	display: inline-block;
+	cursor: pointer;
+	padding: 8px 8px;
+	border: 1px solid orange;
+	border-radius: 5px;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Orange_checkbox-checked.svg/1024px-Orange_checkbox-checked.svg.png");	
+}
+
+input[type="radio"] {
+	width: 20px;
+}
+
+.lien_map {
+	margin: 0px;
+	text-decoration: none;
+	color: black;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.lien_map:hover {
+	text-decoration: underline;
+	color: brown;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:  none;
+    display: inline-block;
+    padding: .5em 2em .5em .9em;
+    cursor: pointer;
+    color: black;
+    font-size: 1em;
+    border: 1px solid grey;
+    border-radius: .2em;
+    background-color: white;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjAwJyBoZWlnaHQ9JzIwMCcgZmlsbD0iIzAwMDAwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHg9IjBweCIgeT0iMHB4Ij48cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJNMTIgMThsLTExLjAxOS0xMWgyMi4wMzh6Ii8+PC9zdmc+);
+    background-size: .8em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - .4em) center;
+    width: 200px;
+}
+
+input {
+	background-color: white;
+	border: 1px solid grey;
+	border-radius: .2em;
+	padding: 10px 10px;
+	width: 60%;
+}
+
+.key {
+	background-color: white;
+	border: 1px solid grey;
+	border-radius: .2em;
+	padding: 10px 10px;
+	display: inline-block;
+	width: 20px;
+}
+
+.conf {
+	padding-top: 20px;
+}
+
+.confirmation {
+	background-color: white;
+	border-radius: 20px;
+	border: 1px solid darkorange;
+	font-size: 20px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: black;
+	width: 150px;
+	cursor: pointer;
+}
+
+.confirmation:hover {
+	background-color: gold;
+	transition: 0.3s all;
+}
+
+.msg_erreur {
+	padding-top: 5px;
+}
+
+div.bo{
+	text-align: right;
+}
+	
+#inscription {
+	background-color: #CCC;
+	border-radius: 20px;
+	border: none;
+	font-size: 20px;
+	padding: 8px 28px;
+	text-decoration: none;
+	color: black;
+	width: 150px;
+	cursor: pointer;
+}
+
+#inscription:hover {
+	background-color: #F3D617;
+	text-decoration-line: underline;
+	transition: 0.3s all;
+}
+
+@media only screen and (max-width: 800px) {
+
+	body {
+		background: linear-gradient(115deg, darkorange 2%, orange 50%, gold 89%);
+	}
+
+	h1 {
+		width: 80%;
+	}
+
+	select {
+		width: 150px;
+	}
+
+	input {
+		width: 80%;
+	}
+
+	.msg_erreur {
+		font-size: 12px;
+	}
+
+	#attention {
+		width: 250px;
+	}
+}

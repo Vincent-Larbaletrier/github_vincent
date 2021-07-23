@@ -1,0 +1,90 @@
+/* footer.css */
+
+a {
+	text-decoration:none;
+	outline:none;
+}
+
+.espace {
+	padding: 40px;
+}
+
+.footer_logostart{
+	float: left;
+	margin: 20px;
+}
+
+.footer_social_icons{
+	width: 50%;
+	height: auto;
+	margin: auto;
+}
+
+.footer_social_icons ul{
+	margin:0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.footer_social_icons ul li{
+	display: inline-block;
+	width:50px;
+	height: 50px;
+	margin: 0px 10px;
+}
+
+.footer_social_icons ul li a{
+	display: block;
+	font-size: 25px
+}
+ 
+.footer_menu_one{
+	width: 70%;
+	height: auto;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.footer_menu_one ul{
+	margin:0px;
+	padding:0px;
+	text-align:center;
+}
+
+.footer_menu_one ul li{
+	display: inline-block;
+	margin: 10px 20px;
+}
+
+.footer_menu_one ul li a {
+	font-size: 20px;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+}
+
+.footer_menu_one ul li a:hover {
+	color: gold;
+	width: auto;
+	transition: 0.3s all;
+}
+
+.footer_bottom{
+	width: 98%;
+	height: auto;
+	margin: auto;
+	margin-top: 10px;
+	padding: 3px;
+	background: white;	
+}
+
+.footer_bottom p {
+	font-size: 14px;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	letter-spacing: 1px;
+}
+
+.footer_bottom p a:hover{
+	color: darkorange; 
+	transition: 0.3s all;
+}

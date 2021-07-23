@@ -1,0 +1,414 @@
+/* faq.css */
+
+a {
+	cursor: pointer;
+}
+
+h1 {
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#faq {
+	text-align: center;
+}
+
+.espace1 {
+	height: 2px;
+}
+
+.espace2 {
+	height: 50px;
+}
+
+.question {
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(255,140,0,0.6);
+	width: 79%;
+	text-align: center;
+	font-size: 30px;
+	padding: 20px;
+	border-radius: 20px;
+	margin-right: 10%;
+	margin-left: 10%;
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+.question:hover {
+	background-color: rgba(255,140,0,1);
+	transition: 0.3s all;
+}
+
+.reponse {
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(255,140,0,0.4);
+	width: 75%;
+	text-align: center;
+	font-size: 30px;
+	padding: 20px;
+	border-radius: 20px;
+	margin-right: 12%;
+	margin-left: 12%;
+	transition: visibility 2s;
+	cursor: pointer;
+}
+
+.reponse:hover {
+	background-color: rgba(255,140,0,0.8);
+	transition: 0.3s all;
+}
+
+.version_admin {
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	background-color: darkorange;
+	border-radius: 20px;
+	font-size: 20px;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.version_admin:hover {
+	background-color: gold;
+	transition: 0.3s all;
+}
+
+.top {
+	width: 50px;
+	height: auto;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	clip-path:ellipse(50% 50%);
+}
+
+.terminer {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#terminer {
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#terminer:hover {
+	text-decoration: underline;
+	color: brown;
+	transition: 0.3s all;
+}
+
+#faq_admin {
+	margin-left: 20px;
+	margin-top: 30px;
+	width: 90%;
+	margin-bottom: 20px;
+}
+
+.contenu {
+	display: inline-block;
+	vertical-align: top;
+	width: 80%;
+
+}
+
+.question_admin {
+	display: inline-block;
+	vertical-align: top;
+	width: 40%;
+	background-color: rgba(255,140,0,0.8);
+	border-radius: 10px;
+	padding: 5px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.reponse_admin {
+	display: inline-block;
+	vertical-align: top;
+	width: 40%;
+	background-color: rgba(255,140,0,0.6);
+	border-radius: 10px;
+	padding: 5px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.input_modif {
+	text-align: center;
+	background-color: transparent;
+	border: none;
+	font-size: 20px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.annuler_modif {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 15%;
+	font-size: 15px;
+	color: black;
+}
+
+.annuler_modif:hover {
+	color: brown;
+	transition: 0.3s all;
+}
+
+.modif {
+	display: inline-block;
+	width: 12%;
+	color: black;
+	font-size: 15px;
+	text-align: center;
+}
+
+.modif:hover {
+	color: brown;
+	transition: 0.3s all;
+}
+
+.selection {
+	display: inline-block;
+	width: 7%;
+	color: black;
+	font-size: 15px;
+	text-align: center;
+}
+
+.espace2 {
+	height: 40px;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	display: inline-block;
+	cursor: pointer;
+	padding: 8px 8px;
+	border: 1px solid orange;
+	border-radius: 5px;
+	background-color: white;
+  	width: 13px;
+  	height: 13px;
+  	margin: 0;
+  	vertical-align: bottom;
+  	position: relative;
+  	top: -1px;
+  	*overflow: hidden;
+}
+
+input[type="checkbox"]:checked {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	background-repeat: no-repeat;
+	background-size: 23.5px;
+	background-position: center;
+	display: inline-block;
+	cursor: pointer;
+	padding: 8px 8px;
+	border: 1px solid orange;
+	border-radius: 5px;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Orange_checkbox-checked.svg/1024px-Orange_checkbox-checked.svg.png");	
+}
+
+.modifs {
+	padding: 5px;
+	text-decoration: none;
+	color: black;
+	border-radius: 20px;
+	margin-left: 30px;
+	font-size: 20px;
+}
+
+.modifs:hover {
+	background-color: darkorange;
+	transition: 0.3s all;
+}
+
+.suppr {
+	padding: 5px;
+	text-decoration: none;
+	color: black;
+	border-radius: 20px;
+	margin-left: 30px;
+	font-size: 20px;
+}
+
+.suppr:hover {
+	background-color: red;
+	transition: 0.3s all;
+}
+
+.modification {
+	background-color: transparent;
+	border: none;
+	font-size: 20px;
+}
+
+h2 {
+	font-size: 25px;
+	margin: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+table {
+	background-color: transparent;
+	margin-top: 30px;
+	border-collapse: collapse;
+	width: 90%;
+	margin-left: 20px;
+}
+
+.colonne1 {
+	width: 15%;
+	text-align: right;
+	vertical-align: top;
+	padding-right: 10px;
+}
+
+.colonne2 {
+	width: 84%;
+	text-align: left;
+}
+
+.insert_question {
+	width: 99%;
+	padding: 5px;
+}
+
+.insert_reponse {
+	width: 99%;
+	padding: 5px;
+	height: 200px;
+}
+
+.espace {
+	height: 20px;
+}
+
+.ajout {
+	margin-right: 10%;
+	background-color: darkorange;
+	border: 1px solid lightgrey;
+	padding: 3px 10px 3px 10px;
+	border-radius: 20px;
+	font-size: 20px;
+}
+
+.ajout:hover {
+	background-color: gold;
+	transition: 0.3s all;
+}
+
+.popup_lien {
+	border: none;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.terminer {
+		margin-top: 300px;
+	}
+
+	.question {
+		width: 89%;
+		font-size: 25px;
+		margin-right: 2%;
+		margin-left: 2%;
+	}
+
+	.reponse {
+		width: 85%;
+		font-size: 25px;
+		margin-right: 4%;
+		margin-left: 4%;
+	}
+
+	.version_admin {
+		font-size: 15px;
+	}
+
+	#faq_admin {
+		margin-left: 2px;
+		width: 98%;
+	}
+
+	.contenu {
+		width: 98%;
+	}
+
+	.question_admin {
+		width: 33%;
+		font-size: 15px;
+	}
+
+	.reponse_admin {
+		width: 33%;
+		font-size: 15px;
+	}
+
+	.input_modif {
+		font-size: 15px;
+	}
+
+	.annuler_modif {
+		width: 28%;
+		font-size: 12px;
+	}
+
+	.modif {
+		width: 33%;
+		margin-top: 10px;
+		font-size: 15px;
+	}
+
+	.selection {
+		width: 35%;
+		font-size: 15px;
+	}
+
+	.modifs {
+		width: 40%;
+		margin-left: 20px;
+		font-size: 15px;
+	}
+
+	.suppr {
+		width: 40%;
+		margin-left: 30px;
+		font-size: 15px;
+	}
+
+	.modification {
+		font-size: 15px;
+	}
+
+	.colonne1 {
+		width: 18%;
+	}
+
+	.colonne2 {
+		width: 80%;
+	}
+
+	.ajout {
+		font-size: 15px;
+	}
+
+}

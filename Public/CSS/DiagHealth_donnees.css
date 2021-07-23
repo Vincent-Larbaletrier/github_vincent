@@ -1,0 +1,317 @@
+/* données.css */
+
+body {
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 40px;
+	margin-left: 20px;
+}
+
+h2 {
+	font-size: 30px;
+	margin-left: 20px;
+}
+
+h3 {
+	font-size: 20px;
+	margin-left: 20px;
+	width: 50%;
+	display: inline-block;
+}
+
+
+.troubles_auditifs {
+	margin-left: 20px;
+	padding-top: 30px;
+}
+
+.niveau_de_stress {
+	margin-left: 20px;
+	padding-top: 30px;
+}
+
+.reflexes {
+	margin-left: 20px;
+	padding-top: 30px;
+}
+
+.exp {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 20%;
+
+}
+
+.exportation {
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: top;
+	background-color: grey;
+	width: 70%;
+	border: 2px solid black;
+	border-radius: 40px;
+	text-align: center;
+	align-items: center;
+	margin-right: 15px;
+	text-decoration: none;
+	color: black;
+	padding-bottom: 10px;
+}
+
+.exportation:hover {
+	background-color: white;
+	transform: translate(-2px, -2px);
+	transition: 0.3s all;
+}
+
+.img_pdf {
+	margin-top: 10px;
+}
+
+.export {
+	text-decoration: none;
+}
+
+.theme {
+	text-decoration: none;
+	color: brown;
+	font-size: 25px;
+}
+
+table {
+	border-collapse: collapse;
+	text-align: center;
+	width: 80%;
+}
+
+.espacement {
+	height: 20px;
+}
+
+tr {
+	
+}
+
+td {
+	border: 2px solid brown;
+}
+
+.c1 {
+	width: 50%;
+	border-right: none;
+}
+
+.c2 {
+	width: 25%;
+	border-left: none;
+	border-right: none;
+} 
+
+.c3 {
+	width: 25%;
+	border-left: none;
+}
+
+.excellent {
+	width: 30px;
+	height: 30px;
+	background-color: green;
+	clip-path: ellipse(50% 50%);
+	margin-top: 10px;
+}
+
+.bon {
+	width: 30px;
+	height: 30px;
+	background-color: lightgreen;
+	clip-path: ellipse(50% 50%);
+	margin-top: 10px;
+}
+
+.moyen {
+	width: 30px;
+	height: 30px;
+	background-color: orange;
+	clip-path: ellipse(50% 50%);
+	margin-top: 10px;
+}
+
+.mauvais {
+	width: 30px;
+	height: 30px;
+	background-color: red;
+	clip-path: ellipse(50% 50%);
+	margin-top: 10px;
+}
+
+p{
+	font-size: 15px;
+}
+
+.espacement2 {
+	height: 100px;
+}
+
+.total {
+	font-size: 25px;
+	display: flex;
+	flex-direction: column;
+	background-color: brown;
+	width: 25%;
+	text-align: center;
+	margin-left: 30px;
+	padding-top: 50px;
+	padding-bottom: 70px;
+	border: 2px solid black;
+	border-radius: 30px;
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.total:hover {
+	background-color: white;
+}
+
+h4 {
+	font-size: 35px;
+	padding: 10px;
+}
+
+.score_excellent {
+	width: 50px;
+	height: 50px;
+	background-color: green;
+	clip-path: ellipse(50% 50%);
+	margin-top: 10px;
+}
+
+.score_bon {
+	width: 50px;
+	height: 50px;
+	background-color: lightgreen;
+	clip-path: ellipse(50% 50%);
+	margin-top: 10px;
+}
+
+.score_moyen {
+	width: 50px;
+	height: 50px;
+	background-color: orange;
+	clip-path: ellipse(50% 50%);
+	margin-top: 10px;
+}
+
+.score_mauvais {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	clip-path: ellipse(50% 50%);
+	margin-top: 10px;
+}
+
+.commentaire_general {
+	font-size: 25px;
+}
+
+.score {
+	font-size: 30px;
+}
+
+.th {
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: top;
+	background-color: orange;
+	width: 20%;
+	border: 2px solid black;
+	border-radius: 40px;
+	text-align: center;
+	margin-right: 15px;
+	text-decoration: none;
+	color: black;
+	padding-bottom: 40px;
+}
+
+.th:hover {
+	background-color: #DF6D14;
+	color: black;
+	transform: translate(-2px, -2px);
+	transition: 0.3s all;
+}
+
+h5 {
+	font-size: 30px;
+	padding-top: 10px;
+	padding: 5px;
+}
+
+.details {
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding: 5px;
+}
+
+/* paramètres image troubles auditifs */
+.img_troubles_auditifs {
+	width: 70%;
+	height: auto;
+	padding-bottom: 10px;
+}
+
+/* paramètres image niveau de stress */
+.img_niveau_de_stress {
+	width: 70%;
+	height: auto;
+	padding-bottom: 10px;
+}
+
+/* paramètres image réflexes */
+.img_reflexes {
+	width: 70%;
+	height: auto;
+	padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.exp {
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+
+	h3 {
+		width: 90%;
+		display: block;
+	}
+
+	.exportation {
+		display: block;
+		background-color: grey;
+		width: 200px;
+		margin-right: 0px;
+	}
+
+	table {
+		width: 98%;
+	}
+
+	.th {
+		display: block;
+		width: 60%;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-top: 50px;
+	}
+
+	.total {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		display: block;
+	}
+}
+

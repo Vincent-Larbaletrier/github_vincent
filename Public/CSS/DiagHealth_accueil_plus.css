@@ -1,0 +1,162 @@
+/* accueil_plus.css */
+
+body {
+	
+}
+
+/* paramètres de la page */
+.accueil {
+	margin-top: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/* paramètres du titre */
+.presentation_titre {
+	margin-left: 30px;
+}
+/*accueil_plus.css*/
+
+/* paramètres du contenu */
+.presentation_texte {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.photo_equipe {
+	display: inline-block;
+	vertical-align: top;
+	width: 14%;
+	height: 250px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 30px;
+}
+
+.photo {
+	width: 150px;
+	height: auto;
+	clip-path:ellipse(50% 50%);
+}
+
+/* paramètres du titre */
+.services_titre {
+	margin-left: 30px;
+}
+
+/* paramètres du contenu */
+.services_texte {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* paramètres des panneaux */
+.panel {
+	background-color: #CECECE;
+	border: 1px solid;
+	border-color: #DF6D14;
+	border-radius: 5px;
+	color: black;
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	height: 1300px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 30px;
+}
+
+/* paramètres survol des panneaux */
+.panel:hover {
+	background-color: #DF6D14;
+	color: black;
+	transform: translate(-2px, -2px);
+	transition: 0.5s all;
+}
+
+/* paramètres image troubles auditifs */
+.img_troubles_auditifs {
+	width: 70%;
+	height: auto;
+}
+
+/* paramètres image niveau de stress */
+.img_niveau_de_stress {
+	width: 70%;
+	height: auto;
+}
+
+/* paramètres image réflexes */
+.img_reflexes {
+	width: 70%;
+	height: auto;
+}
+
+/* paramètres paragraphes */
+p {
+	font-size: 20px;
+	margin: 20px;
+}
+
+/* paramètres titre 1 */
+h1 {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+/* paramètres titre 2 */
+h4 {
+	font-size: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.accueil {
+		margin-top: 250px;
+	}
+
+	.photo_equipe {
+		width: 28%;
+	}
+
+	.panel {
+		width: 30%;
+		height: 1200px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	p {
+		font-size: 15px;
+		margin: 20px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+
+	.photo_equipe {
+		width: 44%;
+		height: 250px;
+	}
+
+	.panel {
+		width: 90%;
+		height: 950px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	p {
+		font-size: 18px;
+		margin: 20px;
+	}
+
+	h4 {
+		font-size: 30px;
+	}
+
+}

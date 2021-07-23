@@ -1,0 +1,265 @@
+/* accueil.css */
+
+h1 {
+	margin-left: 30px;
+}
+
+/* paramètres du block de gauche */
+.leftbox {
+	display: inline-block;
+	width: 53%;
+	margin-left: 0px;
+	margin-top: 50px;
+}
+
+/* paramètres du diaporama */
+#slideshow {
+	position: relative;
+	width: 400px;
+	height: 250px;
+	padding: 15px;
+	margin-left: 70px;
+}
+
+/* gestion des dimensions et débordement du conteneur */
+#slideshow .container {
+	position: relative;
+	width: 400px;
+	height: 250px;
+	overflow: hidden;
+}
+	
+/* paramètres des slides */
+#slideshow .slide {
+	position: absolute;
+	width: 403%;
+	height: 250px;
+}
+
+/* annulation des marges sur figure */
+#slideshow figure {
+	position: relative;
+	display: inline-block;
+	padding: 0; margin: 0;
+}
+
+/* styles des légendes */
+#slideshow figcaption {
+	position: absolute;
+	left: 0; 
+	right: 0; 
+	bottom: 5px;
+	padding: 20px;
+	text-align: center;
+	background: rgba(255,255,255,0.7);
+}
+
+.image {
+	width: 400px;
+	height: 250px;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* fonction d'animation des slides */
+@keyframes slide {
+	0%, 20%, 100%	{ left: 0 }
+	25%, 45%		{ left: -100.8% }
+	50%, 70%		{ left: -201.7% }
+	75%, 95%		{ left: -302.56% }
+}
+
+/* implémentation de l'animation */
+#slideshow .slide {
+	animation: slide 40s infinite;
+}
+
+/* paramètres de la timeline */
+#timeline {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	height: 2px;
+	background-color: darkorange;
+	animation: timeliner 40s infinite;
+}
+
+/* fonction d'animation de la timeline */
+@keyframes timeliner {
+	0%, 25%, 50%, 75%, 100%	{ width: 0;		}
+	20%, 45%, 70%, 90%		{ width: 400px;	}
+}
+
+/* fonction d'animation des légendes */
+@keyframes figcaptionner {
+	0%, 25%, 50%, 75%, 100%						{ bottom: -55px;	}
+	5%, 20%, 30%, 45%, 55%, 70%, 80%, 95%		{ bottom: 5px;		}
+}
+
+/* ajouter à l'élément : */
+#slideshow figcaption {
+	animation: figcaptionner 40s infinite;
+}
+
+/* paramètres du block de droite */
+.rightbox {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+	margin-right: 0px;
+	margin-top: 50px;
+}
+
+/* paramètres du block haut */
+.highbox {
+	margin-right: 50px;
+	border:1px solid;
+	border-color: black;
+}
+
+/* paramètres du block bas */
+.downbox {
+	margin-right: 50px;
+	margin-left: 20px;
+}
+
+/* paramètres texte */
+.description {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+	color: black;
+}
+
+/* paramètres bouton */
+.bouton a {
+	display: block;
+	width: 140px;
+	line-height: 40px;
+	background: white;
+	border: 2px solid;
+	border-color: darkorange;
+	border-radius: 20px;
+	text-align: center;
+	vertical-align: middle;
+	color: black;
+	text-decoration: none;
+}
+
+/* paramètres survol bouton */
+.bouton a:hover {
+	background: darkorange;
+	text-decoration-line: underline;
+	transition: 0.5s all;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.leftbox {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	#slideshow {
+		padding: 0px;
+		margin-left: 0px;
+	}
+
+	#slideshow .container {
+		width: 350px;
+	}
+
+	#slideshow .slide {
+		width: 420%;
+	}
+
+	#timeline {
+		bottom: 0px;
+		left: 5px;
+	}
+
+	@keyframes slide {
+		0%, 20%, 100%	{ left: 0 }
+		25%, 45%		{ left: -104.9% }
+		50%, 70%		{ left: -207.76% }
+		75%, 95%		{ left: -311.8% }
+	}
+
+	@keyframes timeliner {
+		0%, 25%, 50%, 75%, 100%	{ width: 0;		}
+		20%, 45%, 70%, 90%		{ width: 390px;	}
+	}
+
+	.rightbox {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		margin-top: 60px;
+	}
+
+	.highbox {
+		width: 400px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.downbox {
+		margin-right: 0px;
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	#slideshow {
+		width: 350px;
+		height: 200px;
+	}
+
+	#slideshow .container {
+		width: 300px;
+		height: 200px;
+	}
+		
+	#slideshow .slide {
+		width: 417%;
+		height: 200px;
+	}
+
+	#slideshow figcaption {
+		padding: 15px;
+	}
+
+	.image {
+		width: 350px;
+		height: 200px;
+	}
+
+	@keyframes slide {
+		0%, 20%, 100%	{ left: 0 }
+		25%, 45%		{ left: -105.8% }
+		50%, 70%		{ left: -207.9% }
+		75%, 95%		{ left: -312.8% }
+	}
+
+	#timeline {
+		bottom: 0px;
+		left: 5px;
+	}
+
+	@keyframes timeliner {
+		0%, 25%, 50%, 75%, 100%	{ width: 0;		}
+		20%, 45%, 70%, 90%		{ width: 340px;	}
+	}
+
+	.highbox {
+		width: 350px;
+	}
+}
+

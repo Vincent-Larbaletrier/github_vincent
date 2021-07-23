@@ -1,0 +1,758 @@
+body {
+	font-size: 15px;
+}
+
+/* CSS forum */
+
+h1 {
+	font-size: 40px;
+	padding-left: 20px;
+}
+
+.nb_sujets_style {
+	width: 70%;
+	display: inline-block;
+}
+
+.nb_sujets {
+	padding-left: 20px;
+	font-size: 20px;
+}
+
+.nouveau_post {
+	width: 20%;
+	display: inline-block;
+	text-align: right;
+}
+
+.nouveau_post_bouton {
+	text-decoration: none;
+	margin-left: 10px;
+	color: black;
+	border: 2px solid black;
+	border-radius: 40px;
+	padding: 10px;
+}
+
+.nouveau_post_bouton:hover {
+	color: darkorange;
+	border: 2px solid darkorange;
+	transition: 0.5s all;
+}
+
+.choix {
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.disconnect {
+	margin-left: 30px;
+	font-size: 20px;
+}
+
+#section_forum {
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	text-align: center;
+	background-color: gold;
+	border: 2px solid gold;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	margin-left: 30px;
+	padding: 10px;
+	color: black;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#section_forum:hover {
+	transition: 0.5s all;
+}
+
+#section_favoris {
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	text-align: center;
+	background-color: darkorange;
+	border: 2px solid gold;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	margin-left: 5px;
+	padding: 10px;
+	color: black;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#section_favoris:hover {
+	transition: 0.5s all;
+}
+
+.affichage_forum_table {
+	border-collapse: collapse;
+	width: 90%;
+	margin-left: 20px;
+}
+
+.affichage_forum_tr {
+	background-color: lightgrey;
+	border: 2px solid darkorange;
+	border-radius: 10px;
+}
+
+.reponses {
+	text-align: center;
+	width: 70px;
+}
+
+p {
+	margin-top: 5px;
+}
+
+.nb_reponses {
+	background-color: darkorange;
+	display: inline-block;
+	padding: 10px;
+	width: 20px;
+	margin-bottom: 0px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.titre {
+	text-align: left;
+	vertical-align: top;
+	width: 70%;
+}
+
+.titre_style {
+	text-decoration: none;
+	margin-top: 5px;
+	font-weight: bold;
+	font-size: 30px;
+	color: black;
+	margin-left: 20px;
+}
+
+.titre_style:hover {
+	text-decoration: underline;
+	transition: 0.5s all;
+}
+
+.complements {
+	text-align: right;
+	vertical-align: bottom;
+}
+
+.auteur {
+	font-size: 13px;
+	margin-right: 5px;
+}
+
+.espace_affichage {
+	height: 15px;
+}
+
+/* CSS nouveau sujet */
+
+h2 {
+	padding-left: 20px;
+	font-size: 35px;
+	margin-bottom: 50px;
+}
+
+.nouveau_sujet_table {
+	border-collapse: collapse;
+	width: 90%;
+	margin-left: 20px;
+}
+
+.nouveau_sujet_titre {
+	text-align: right;
+	vertical-align: top;
+	padding-right: 20px;
+	width: 30%;
+}
+
+.insert_titre {
+	width: 90%;
+	padding-bottom: 20px;
+	border: 1px solid lightgrey;
+}
+
+.espace_nouveau {
+	height: 20px;
+}
+
+.insert_msg {
+	width: 90%;
+	height: 200px;
+	border: 1px solid lightgrey;
+}
+
+.post {
+	margin-right: 10%;
+	background-color: darkorange;
+	border: 1px solid gold;
+	padding: 5px 10px 5px 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.post:hover {
+	background-color: gold;
+	transition: 0.5s all;
+}
+
+.retour {
+	text-decoration: none;
+	margin-left: 20px;
+	color: black;
+	font-size: 20px;
+}
+
+.retour:hover {
+	color: darkorange;
+	transition: 0.5s all;
+}
+
+.top {
+	width: 50px;
+	height: auto;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	clip-path: ellipse(50% 50%);
+}
+
+@media only screen and (max-width: 1000px) {
+
+	/* CSS forum */
+
+	.nb_sujets_style {
+		width: 50%;
+	}
+
+	.nb_sujets {
+		font-size: 15px;
+	}
+
+	.nouveau_post {
+		width: 40%;
+	}
+
+	.nouveau_post_bouton {
+		font-size: 12px;
+		margin-left: 10px;
+	}
+
+	#section_forum {
+		font-size: 15px;
+	}
+
+	#section_favoris {
+		font-size: 15px;
+	}
+
+	.affichage_forum_table {
+		width: 95%;
+		margin-left: 10px;
+	}
+
+	.titre {
+		width: 60%;
+	}
+
+	.titre_style {
+		font-size: 25px;
+	}
+
+	.auteur {
+		font-size: 10px;
+	}
+
+	.espace_affichage {
+		height: 10px;
+	}
+
+	/* CSS nouveau sujet */
+
+	h2 {
+		font-size: 30px;
+	}
+
+	.nouveau_sujet_table {
+		width: 95%;
+		margin-left: 10px;
+	}
+
+	.nouveau_sujet_titre {
+		padding-right: 10px;
+		font-size: 12px;
+	}
+
+	.insert_titre {
+		width: 95%;
+	}
+
+	.insert_msg {
+		width: 95%;
+		height: 200px;
+	}
+
+	.post {
+		font-size: 12px;
+	}
+
+	.retour {
+		font-size: 15px;
+	}
+}
+
+/* CSS forum sujet */
+
+.reponse_table {
+	border-collapse: collapse;
+	width: 95%;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.reponse_tr {
+	background-color: lightgrey;
+	border: 2px solid darkorange;
+	border-radius: 10px;
+}
+
+.auteur_reponse {
+	font-size: 15px;
+	width: 20%;
+	padding: 10px;
+	vertical-align: top;
+}
+
+.message_lecture {
+	vertical-align: top;
+	padding-top: 5px;
+	font-size: 15px;
+	padding-right: 5px;
+}
+
+.message_modifs {
+	vertical-align: top;
+	padding-top: 5px;
+	font-size: 15px;
+	padding-right: 5px;
+}
+
+.input_modification {
+	width: 97%;
+	padding: 5px;
+	height: 100px;
+}
+
+.gestion_tr {
+	width: 20%;
+	vertical-align: bottom;
+}
+
+.option {
+	margin-left: 10px;
+	text-align: right;
+	height: 100%;
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+
+.modifier {
+	margin-right: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.modifier:hover {
+	color: darkorange;
+	transition: 0.5s all;
+}
+
+.supprimer {
+	margin-right: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.supprimer:hover {
+	color: darkorange;
+	transition: 0.5s all;
+}
+
+.annuler {
+	margin-right: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.annuler:hover {
+	color: darkorange;
+	transition: 0.5s all;
+}
+
+.valider_modification {
+	margin-right: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+	border: none;
+	background-color: darkorange;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.valider_modification:hover {
+	background-color: gold;
+	transition: 0.5s all;
+}
+
+.espace_reponse {
+	height: 10px;
+}
+
+.repondre_style {
+	width: 50%;
+	margin-left: 30px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.repondre {
+	margin-right: 10%;
+	background-color: darkorange;
+	border: 1px solid gold;
+	padding: 5px 10px 5px 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+.repondre:hover {
+	background-color: gold;
+	transition: 0.5s all;
+}
+
+.retour_style {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+}
+
+#nouvelle_reponse {
+	border: 3px double darkorange;
+	border-radius: 20px;
+	padding-bottom: 20px;
+	margin: 10px;
+}
+
+.nouvelle_reponse_table {
+	border-collapse: collapse;
+	width: 90%;
+	margin-left: 20px;
+}
+
+.titre_rep {
+	text-align: right;
+	vertical-align: top;
+	padding-right: 20px;
+	width: 30%;
+}
+
+.insert_rep {
+	width: 90%;
+	height: 200px;
+	border: 1px solid lightgrey;
+}
+
+.nouvelle_reponse_btn {
+	margin-right: 10%;
+	background-color: darkorange;
+	border: 1px solid gold;
+	padding: 5px 10px 5px 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.nouvelle_reponse_btn:hover {
+	background-color: gold;
+	transition: 0.5s all;
+}
+
+.retour {
+	text-decoration: none;
+	margin-left: 20px;
+	color: black;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.retour:hover {
+	color: darkorange;
+	transition: 0.5s all;
+}
+
+.suppression {
+	display: block;
+	text-decoration: none;
+	font-size: 15px;
+	margin-left: 30px;
+	margin-top: 50px;
+	border-radius: 25px;
+	width: 180px;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.suppression:hover {
+	background-color: red;
+	transition: 0.5s all;
+}
+
+.fav {
+	text-align: center;
+	padding-top: 40px;
+}
+
+.suivre {
+	border: none;
+	background-color: darkorange;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.suivre:hover {
+	background-color: gold;
+	font-size: 18px;
+	transition: font-size 0.7s, background-color 1s;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.reponse_table {
+		width: 98%;
+		margin-left: 5px;
+	}
+
+	.auteur_reponse {
+		font-size: 12px;
+	}
+
+	.message_lecture {
+		vertical-align: top;
+		padding-top: 5px;
+		font-size: 12px;
+		padding-right: 5px;
+	}
+
+	.message_modifs {
+		font-size: 15px;
+	}
+
+	.gestion_tr {
+		width: 23%;
+	}
+
+	.option {
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.modifier {
+		margin-bottom: 5px;
+	}
+
+	.valider_modification {
+		margin-top: 10px;
+	}
+
+	.repondre_style {
+		width: 50%;
+		margin-left: 30px;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	#nouvelle_reponse {
+		border: 3px double darkorange;
+		border-radius: 20px;
+		padding-bottom: 20px;
+		margin: 10px;
+	}
+
+	.nouvelle_reponse_table {
+		width: 98%;
+	}
+
+	.titre_rep {
+		width: 20%;
+	}
+
+	.retour {
+		font-size: 15px;
+	}
+
+	.suppression {
+		font-size: 15px;
+		margin-left: 20px;
+		margin-top: 30px;
+	}
+
+}
+
+/*
+table {
+	border-collapse: collapse;
+	width: 90%;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+tr {
+	background-color: lightgrey;
+	border: 2px solid orange;
+	border-radius: 10px;
+}
+
+h2 {
+	margin-left: 20px;
+	font-size: 30px;
+}
+
+.espace {
+	height: 15px;
+}
+
+.auteur {
+	font-size: 15px;
+	width: 30%;
+	padding: 10px;
+}
+
+.message {
+	font-size: 15px;
+}
+
+.repondre {
+	text-decoration: none;
+	margin-left: 30px;
+	color: black;
+	background-color: orange;
+	padding: 7px 10px 7px 10px;
+	border: 2px solid gold;
+	border-radius: 30px;
+}
+
+.repondre:hover {
+	background-color: gold;
+	transition: 0.3s all;
+}
+
+.retour_style {
+	margin-top: 30px;
+}
+
+.retour {
+	text-decoration: none;
+	margin-left: 90%;
+	color: black;
+	font-size: 20px;
+}
+
+.retour:hover {
+	color: orange;
+	transition: 0.3s all;
+}
+
+.suppr {
+	margin-left: 80%;
+}
+
+.suppr:hover {
+	color: red;
+}
+
+.suppression {
+	margin-left: 3px;
+	background-color: white;
+	border: none;
+}
+
+.suppression:hover {
+	color: red;
+}
+
+.retour {
+	margin-left: 20px;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+
+.retour:hover {
+	color: orange;
+}
+
+.selection {
+	width: 50px;
+	text-align: center;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	display: inline-block;
+	cursor: pointer;
+	padding: 8px 8px;
+	border: 1px solid orange;
+	border-radius: 5px;
+	background-color: white;
+  	width: 13px;
+  	height: 13px;
+  	margin: 0;
+  	vertical-align: bottom;
+  	position: relative;
+  	top: -1px;
+  	*overflow: hidden;
+}
+
+input[type="checkbox"]:checked {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	background-repeat: no-repeat;
+	background-size: 23.5px;
+	background-position: center;
+	display: inline-block;
+	cursor: pointer;
+	padding: 8px 8px;
+	border: 1px solid orange;
+	border-radius: 5px;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Orange_checkbox-checked.svg/1024px-Orange_checkbox-checked.svg.png");	
+}
+
+

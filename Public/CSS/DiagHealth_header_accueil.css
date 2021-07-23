@@ -1,0 +1,344 @@
+/* header.css */
+
+.container {
+
+    width: 97%;
+    margin: auto;
+    z-index: auto;
+    background-color: darkorange;
+}
+
+.header {
+
+    height: 500px;
+    width: 100%;
+    background-color: darkorange;
+    position: relative;
+    z-index: auto;
+
+}
+
+.header_texture {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(..//Images/Accueil.jpg) center no-repeat;
+    background-size: cover;
+    z-index: auto;
+    opacity: 0.5;
+}
+
+
+.header_mask {
+
+    position: absolute;
+    bottom: 0;
+    background: 0 0;
+    height: 50px;
+    width: 100%;
+    z-index: auto;
+
+}
+
+.header_navbar {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header_navbar_logo_title {
+
+    color: black;
+    font-size: 80px;
+    text-decoration: none;
+}
+
+.header_navbar_logo_title:hover {
+    color: darkorange;
+}
+
+.logo {
+    vertical-align: bottom;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.li {
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.ul .li {
+    list-style: none;
+    line-height: 40px;
+    float:left;
+}
+
+.ul .li a {
+    padding:10px;
+    font-size:20px;
+    text-decoration:none;
+}
+
+.ul .li .ul { 
+    display:none; 
+}
+
+.ul .li:hover .ul {
+    z-index: 99999;
+    display: list-item;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 13px;
+    text-align: center;
+    list-style: none;
+}
+
+.ul .li:hover .ul .li {
+    float:none;
+    padding: 0px;
+}
+
+.ul .li .statut { 
+    display:none; 
+}
+
+.ul .li:hover .statut {
+    z-index: 99999;
+    display: block;
+    position: absolute;
+    text-align: center;
+    list-style: none;
+}
+
+.statut {
+    width: 60px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 20px;
+}
+
+.badge {
+    font-size: 25px;
+}
+
+.info_role {
+    font-size: 10px;
+}
+
+.badge:hover {
+    color: brown;
+    transition: 0.5s all;
+}
+
+.info_role:hover {
+    color: brown;
+    transition: 0.5s all;
+}
+
+.avatar_pp {
+    width: 50px;
+}
+
+.header_menu_link {
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header_menu_link:hover {
+    color: gold;
+    border-bottom: 3px solid gold;
+    transition: 0.5s all;
+}
+
+.header_menu_link_co {
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.header_menu_link_co:hover {
+    background-color: gold;
+    border-color: gold;
+    transition: 1s all;
+}
+
+.deco {
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 40px;
+    font-size: 40px;
+}
+
+.pp {
+    width: 40px;
+    height: 40px;
+    clip-path:ellipse(50% 50%);
+    vertical-align: top;
+}
+
+.pp:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.header_slogan {
+    position: relative;
+    text-align: center;
+}
+
+.h_slogan_title {
+
+    color: aliceblue;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 2px;
+
+}
+
+.header_navbar_toggle {
+
+    width: 40px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    display: none;
+    z-index: 999;
+    cursor: pointer;
+}
+
+
+.header_navbar_toggle_icons,
+.header_navbar_toggle_icons:before,
+.header_navbar_toggle_icons:after {
+
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background: rgb(0, 0, 0);
+    position: relative;
+}
+
+.header_navbar_toggle_icons:after {
+    top: -14px
+}
+
+.header_navbar_toggle_icons:before {
+    top: 10px
+}
+
+.is-open .header_navbar_menu {
+
+    transform: translateY(0);
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .container {
+        width: 95%;
+        padding: 0 20px;
+    }
+
+    .avatar {
+        width: 70px;
+        font-size: 40px;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    .pp {
+        width: 70px;
+        height: 70px;
+        clip-path:ellipse(50% 50%);
+        vertical-align: bottom;
+    }
+
+    .header_slogan {
+        display: none;
+    }
+
+    .header_navbar_toggle {
+        display: flex;
+        z-index: 1000;
+    }
+
+    .header_navbar_menu {
+
+        transition: all 0.6s ease-in-out;
+        transform: translateY(-100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 97%;
+        height: 500px;
+        top: 0;
+        left: 0;
+        background-color: darkorange;
+    }
+
+    .header_navbar_menu_link {
+
+        margin: 20px 0;
+        font-size: 24px;
+    }
+
+    .ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .ul .li {
+        list-style: none;
+        line-height: 40px;
+    }
+
+
+    .ul .li:hover .ul {
+        position: relative;
+    }
+
+    .statut {
+        padding: 0px;
+        margin: 0px;
+        margin-left: 25px;
+    }
+}

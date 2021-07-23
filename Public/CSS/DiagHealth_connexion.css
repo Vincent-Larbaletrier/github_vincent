@@ -1,0 +1,155 @@
+/* connexion.css */
+
+html {
+	background-image: url("https://www.zurich.com/-/media/project/zurich/dotcom/media/magazine/2020/images/stage-construction-site.jpg?h=1250&la=en&w=2500&rev=131eb9d7dd544a998f988d6dc377594f&hash=E73E34B9EAE574B59321F090229F16A6");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+body {
+	background-color: #EDEDED;
+	font-size: 18px;
+	border: 2px solid brown;
+	padding: 30px 50px 20px 50px;
+	margin: 100px 25% 100px 25%;
+}
+
+.division {
+	text-align: center;
+}
+
+input {
+	border-radius: 5px;
+	border-width: thin;
+	padding: 8px 18px;
+	background-color: #FFCB60;
+}
+
+.logo {
+	text-align: left;
+}
+
+.logo_img {
+	width: 50px;
+	transition: transform .2s;
+}
+
+.logo_img:hover {
+    transform: scale(1.1);
+    transition: 0.5s all;
+}
+
+.retour_menu {
+	
+}
+
+.message {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 50px;
+	font-size: 16px;
+	color: #ED7F10;
+	width: 60%;
+}
+
+.motd {
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.motd:hover {
+	color: brown;
+	transition: 0.5s all;
+}
+
+.bouton_connexion {
+	background-color: #ED7F10;
+	border-radius: 20px;
+	border: none;
+	font-size: 20px;
+	padding: 8px 28px;
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+.bouton_connexion:hover {
+	background-color: #F3D617;
+	text-decoration-line: underline;
+	transition: 0.5s all;
+}
+
+.division2 {
+	text-align: right;
+}
+
+.bouton_inscription {
+	background-color: #ED7F10;
+	border-radius: 20px;
+	border: none;
+	font-size: 20px;
+	padding: 8px 28px;
+	text-decoration: none;
+	color: black;
+}
+
+.bouton_inscription:hover {
+	background-color: #F3D617;
+	text-decoration-line: underline;
+	transition: 0.5s all;
+}
+
+@media only screen and (max-width: 920px) {
+
+	html {
+		background: linear-gradient(115deg, darkorange 2%, orange 50%, gold 89%);
+	}
+
+	body {
+		margin: 80px 20% 80px 20%;
+		background-color: transparent;
+	}
+
+	input {
+		border: none;
+		border-bottom: 1px solid brown;
+		border-radius: 0px;
+		background-color: transparent;
+	}
+
+	.message {
+		color: brown;
+	}
+
+	.bouton_connexion {
+		font-size: 18px;
+		padding: 5px 20px;
+	}
+
+	.bouton_inscription {
+		font-size: 18px;
+		padding: 5px 20px;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+	html {
+		
+	}
+
+	body {
+		margin: 60px 15% 60px 15%;
+	}
+
+	.message {
+		display: flex;
+		flex-direction: column;
+		padding-left: 0px;
+		width: 100%;
+	}
+
+}
